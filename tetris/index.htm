@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<script src="shapes.js"></script>
+		<script src="shapesgenerator.js"></script>
+		<script src="gamecontroller.js"></script>
+		<script src="scorepane.js"></script>
+		<script src="globalmessage.js"></script>
+		<script src="functions.js"></script>
+	</head>
+	<body onload="Init(10, 16)">
+		<font size=20><b>Vadim's TETRIS</b></font><br><br>
+		<table>
+			<tr>
+				<td>
+					<div id=court></div><br>
+				</td>
+				<td width=20>&nbsp;</td>
+				<td valign=top>
+					<div id=score></div>
+					<br><br>
+					Controls:
+					<li> "Right arrow" - move the shape right
+					<li> "Left arrow" - move the shape left
+					<li> "Up arrow" - rotate the shape
+					<li> "Space bar" - shoot the shape down
+					<li> "Esc" or "Enter" - pause or continue the game
+					<br><br><br>
+					<input type=button value='New Game' onclick="Start()" id=startbtn>
+					<br><br><br>
+					&copy;Vadim2, 2006
+				</td>
+			</tr>
+		</table>
+		<div id=gameover style="position:absolute;"></div>
+	</body>
+</html>
