@@ -29,6 +29,16 @@ function Init(x, y) {
 	sc = new ScorePane('score');
 	sc.Init();
 	gameover = new GlobalMessage('gameover');
+
+	// test webserver
+	$.ajax({
+	    url: "test",
+	    type: "get",
+	    dataType: "json",
+	    success: function(data, status) {
+            //alert("Data: " + data + "\nStatus: " + status);
+        }
+    });
 }
 
 function Start() {
